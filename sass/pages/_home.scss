@@ -10,3 +10,21 @@
         color: $text-color-darkgrey;
     }
 }
+
+// ****Explorer****
+.presentment {
+    background-color: $background-color-lightgrey;
+    text-align: center;
+    padding: 30px 40px 50px 40px;
+    gap: 20px;
+    @include flex-column-center;
+
+    &__title {
+        margin: 0;
+    }
+
+    &__text {
+        color: $text-color-darkgrey;
+        margin: 0;
+    }
+}

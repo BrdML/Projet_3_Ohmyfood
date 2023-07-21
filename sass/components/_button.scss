@@ -1,0 +1,16 @@
+.presentment__btn {
+    color: $text-color-white;
+    @include gradient-btn;
+    border-radius: $btn-radius;
+    width: 218px;
+    height: 50px;
+    padding: 13px 19px;
+    transition: all 0.3s ease;
+    @include btn-shadow;
+    font-weight: 500;
+
+    &:hover {
+        @include gradient-btn-hover;
+        @include btn-shadow-hover;
+    }
+}

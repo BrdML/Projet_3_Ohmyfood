@@ -1,0 +1,12 @@
+.header {
+    background-color: $background-color-white;
+    height: 65px;
+    width: 100%;
+    position: relative;
+    @include flex-align-justify-center;
+    @include box-shadow;
+        
+        &__img {
+            width: 50%;
+        }
+}

@@ -1,0 +1,12 @@
+// ****Location****
+.location {
+    background-color: $background-color-grey;
+    height: 50px;
+    @include flex-align-justify-center;
+
+    &__text{
+        gap: 17px;
+        display: flex;
+        color: $text-color-darkgrey;
+    }
+}

@@ -8,6 +8,34 @@
 
 body {
   margin: 0;
+  overflow: hidden;
+}
+
+.header {
+  background-color: #FFFFFF;
+  height: 65px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+}
+.header__img {
+  width: 50%;
+}
+
+.location {
+  background-color: #EAEAEA;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.location__text {
+  gap: 17px;
+  display: flex;
+  color: #353535;
 }
 
 /*# sourceMappingURL=main.css.map */

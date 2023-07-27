@@ -28,3 +28,65 @@
         margin: 0;
     }
 }
+
+// ****fonctionnement****
+.functioning {
+    &__title {
+        width: 100%;
+    }
+
+    &__title-text {
+        padding: 48px 0px 28px 20px;
+    }
+
+    &__card {
+        display: flex;
+        width: 100%;
+        gap: 18px;
+        @include flex-column-center;
+        margin-bottom: 68px;
+
+        h4 {
+            width: 57%;
+        }
+
+    }
+
+    &__card-step {
+        height: 72px;
+        width: 86%;
+        gap: 15px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        background-color: $background-color-lightgrey;
+        border-radius: $card-radius;
+        @include card-shadow;
+
+        i {
+            color: $color-grey-i;
+            width: 13px;
+            height: 19px;
+        }
+
+        &:hover {
+            i {
+                color: $primary-color;
+            }
+        }
+    }
+
+    &__card-num {
+        background-color: $primary-color;
+        border-radius: 100%;
+        width: 6%;
+        height: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        color: $text-color-white;
+        left: 12px;
+    }
+}

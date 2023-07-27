@@ -1,18 +1,23 @@
 // Principale
-$primary-color : #9356DC;
-$secondary-color : #FF79DA;
-$tertiary-color : #99E2D0;
+$primary-color: #9356DC;
+$secondary-color: #FF79DA;
+$tertiary-color: #99E2D0;
 
-// Utilitaires Couleurs
+// Utilitaires Couleurs fond
 $background-color-grey: #EAEAEA;
 $background-color-lightgrey: #f6f6f6;
-$background-color-darkgrey : #353535;
-$background-color-white : #FFFFFF;
+$background-color-darkgrey: #353535;
+$background-color-white: #FFFFFF;
+
+// Utilitaires Couleurs divers
+$color-grey-i: #7E7E7E;
+
 
 // Textes
 $text-color-darkgrey: #353535;
-$text-color-white : #FFFFFF;
-$text-color-black : #000000;
+$text-color-white: #FFFFFF;
+$text-color-black: #000000;
 
-//button style
-$btn-radius : 25px;
+//style
+$btn-radius: 25px;
+$card-radius: 20px;

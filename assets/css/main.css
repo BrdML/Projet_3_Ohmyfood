@@ -8,7 +8,6 @@
 
 body {
   margin: 0;
-  overflow: hidden;
 }
 
 .header {
@@ -53,6 +52,57 @@ body {
 .presentment__text {
   color: #353535;
   margin: 0;
+}
+
+.functioning__title {
+  width: 100%;
+}
+.functioning__title-text {
+  padding: 48px 0px 28px 20px;
+}
+.functioning__card {
+  display: flex;
+  width: 100%;
+  gap: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 68px;
+}
+.functioning__card h4 {
+  width: 57%;
+}
+.functioning__card-step {
+  height: 72px;
+  width: 86%;
+  gap: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #f6f6f6;
+  border-radius: 20px;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+}
+.functioning__card-step i {
+  color: #7E7E7E;
+  width: 13px;
+  height: 19px;
+}
+.functioning__card-step:hover i {
+  color: #9356DC;
+}
+.functioning__card-num {
+  background-color: #9356DC;
+  border-radius: 100%;
+  width: 6%;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  color: #FFFFFF;
+  left: 12px;
 }
 
 .presentment__btn {

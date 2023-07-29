@@ -1,0 +1,79 @@
+.restaurants {
+
+    &__card-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &__card{
+        background-color: white;
+        border-radius: 20px;
+        width: 100%;
+        position: relative;
+
+        img {
+           width: 100%;
+           height: 177px;
+           border-radius: 20px 20px 0px 0px;
+        }
+        
+
+    }
+
+    &__card-link {
+        text-decoration: none;
+        list-style: none;
+        color: black;
+    }
+
+    &__new {
+        &::before {
+            content: "Nouveau";
+            position: absolute;
+            right: 18px;
+            top: 26px;
+            background-color: $tertiary-color;
+            border-radius: 2px;
+            height: 29px;
+            width: 23%;
+            text-align: center;
+            color: $text-color-green;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    &__card-content {
+        display: flex;
+        flex-direction: column;
+        padding: 10px 20px 0px 20px;
+
+        .card-text-heart {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            i {
+                font-size: 30px;
+            }
+            .fa-regular {
+                position: relative;
+             }
+            .fa-solid {
+                position: absolute;
+                right: 20px;
+                @include heart-hover;
+            }
+        }
+
+        h3{
+            margin: 0;
+        }
+        p {
+            margin-top: 0;
+        }
+    }
+}

@@ -5,7 +5,7 @@ $tertiary-color: #99E2D0;
 
 // Utilitaires Couleurs fond
 $background-color-grey: #EAEAEA;
-$background-color-lightgrey: #f6f6f6;
+$background-color-lightgrey: #F6F6F6;
 $background-color-darkgrey: #353535;
 $background-color-white: #FFFFFF;
 
@@ -17,7 +17,17 @@ $color-grey-i: #7E7E7E;
 $text-color-darkgrey: #353535;
 $text-color-white: #FFFFFF;
 $text-color-black: #000000;
+$text-color-green: #008766;
 
 //style
 $btn-radius: 25px;
 $card-radius: 20px;
+
+//  heart effect
+$heart-stop-color: #9356DC;
+$heart-start-color: #FF79DA;
+
+
+//media queries
+$breakpoints-min: (desktop: 1600px, tablette:500px,mobile: 390px, mobile-sm: 250px);
+$breakpoints-max: (desktop: 2200px, tablette:1599px, mobile: 499px, mobile-sm:389px);

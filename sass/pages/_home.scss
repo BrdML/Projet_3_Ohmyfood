@@ -16,7 +16,7 @@
     background-color: $background-color-lightgrey;
     text-align: center;
     padding: 30px 40px 50px 40px;
-    gap: 20px;
+    gap: 30px;
     @include flex-column-center;
 
     &__title {
@@ -62,6 +62,7 @@
         justify-content: center;
         background-color: $background-color-lightgrey;
         border-radius: $card-radius;
+        position: relative;
         @include card-shadow;
 
         i {
@@ -87,6 +88,12 @@
         justify-content: center;
         position: absolute;
         color: $text-color-white;
-        left: 12px;
+        left: -9px;
     }
+}
+
+// ****Réstaurants****
+.restaurants {
+    background-color: $background-color-lightgrey;
+    padding: 48px 20px 58px 20px;
 }

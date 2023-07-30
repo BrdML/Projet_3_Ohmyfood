@@ -27,6 +27,14 @@ $card-radius: 20px;
 $heart-stop-color: #9356DC;
 $heart-start-color: #FF79DA;
 
+// Loader
+$anim_time: 2.1; // main pan/pancake animation (in seconds)
+$flatten_deg: 85; // how round will the pancake be at the top/peak (in deg), affecting general animation though so not really adjustable
+$angle: 27; // max pan's angle while flipping (in deg)
+$peak: 40%; // pancake's highest level ! 
+$color_back: #EAEAEA; // background
+$color: #9356DC; // all elements
+
 
 //media queries
 $breakpoints-min: (desktop: 1600px, tablette:500px,mobile: 390px, mobile-sm: 250px);

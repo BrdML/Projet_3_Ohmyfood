@@ -37,5 +37,7 @@ $color: #9356DC; // all elements
 
 
 //media queries
-$breakpoints-min: (desktop: 1600px, tablette:500px,mobile: 390px, mobile-sm: 250px);
-$breakpoints-max: (desktop: 2200px, tablette:1599px, mobile: 499px, mobile-sm:389px);
+// (desktop: 1440px, tablette:1024px, mobile: 768px);
+$breakpoints-tablette: 1024px;
+$breakpoints-desktop: 1200px;
+$breakpoints-max-width: 1440px;

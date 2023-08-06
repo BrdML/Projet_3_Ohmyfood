@@ -4,7 +4,7 @@
     width: 100%;
     overflow: hidden;
     position: fixed;
-    animation: disappear 1s ease 4s forwards;
+    animation: disappear 1s ease 3s forwards;
     z-index: 999;
 
     h1 {
@@ -18,6 +18,15 @@
         color: $color;
         opacity: .75;
         animation: pulse 2.5s linear infinite;
+
+        @media (min-width: $breakpoints-tablette) {
+          font-size: 6vh;
+          top: 17vh;
+        }
+
+        @media (min-width: $breakpoints-desktop) {
+          font-size: 9vh;
+        }
     }
 
     #cooking {
@@ -27,6 +36,16 @@
         width: 100%;
         height: 55vh;
         overflow: hidden;
+
+        @media (min-width: $breakpoints-tablette) {
+          width: 50%;
+          height: 66vh;
+        }
+
+        @media (min-width: $breakpoints-desktop) {
+          width: 45%;
+          height: 83vh;
+        }
 
         .bubble {
           position: absolute;
@@ -89,6 +108,10 @@
           background-color: transparent;
           transform-origin: 15% 60%;
           animation: flip #{$anim_time}s ease-in-out infinite;
+
+          @media (min-width: $breakpoints-tablette) {
+            bottom: 50px;
+          }
 
           #sides {
             position: absolute;

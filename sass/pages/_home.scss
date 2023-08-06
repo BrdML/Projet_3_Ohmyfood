@@ -45,16 +45,21 @@
         gap: 18px;
         @include flex-column-center;
         margin-bottom: 68px;
+        padding: 0px 30px 0px 30px;
 
         h4 {
-            width: 57%;
+            width: 65%;
+        }
+
+        @media (min-width: $breakpoints-tablette )  {
+            flex-direction: row;
         }
 
     }
 
     &__card-step {
         height: 72px;
-        width: 86%;
+        width: 100%;
         gap: 15px;
         display: flex;
         flex-direction: row;
@@ -90,10 +95,27 @@
         color: $text-color-white;
         left: -9px;
     }
+
+    @media (min-width: $breakpoints-desktop )  {
+        padding: 0px 150px 0px 150px;
+    }
 }
 
 // ****Réstaurants****
 .restaurants {
     background-color: $background-color-lightgrey;
     padding: 48px 20px 58px 20px;
+
+    
+    @media (min-width: $breakpoints-tablette )  {
+            &__card-container {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 100px;
+            }
+    }
+
+    @media (min-width: $breakpoints-desktop )  {
+        padding: 50px 150px 50px 150px;
+    }
 }

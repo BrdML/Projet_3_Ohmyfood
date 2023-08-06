@@ -6,7 +6,22 @@
     @include flex-align-justify-center;
     @include box-shadow;
         
-        &__img {
-            width: 50%;
-        }
+    &__img {
+            width: 180px;
+    }
+
+    // restaurants 
+    &__arrow {
+        position: absolute;
+        left: 20px;
+        top: 20px;
+        font-size: x-large;
+        color: black;
+    }
+
+    // @media (min-width: $breakpoints-tablette ) {
+    //     &__img {
+    //         width: 24%;
+    //     }
+    // }
 }

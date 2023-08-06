@@ -1,0 +1,69 @@
+.menu__card {
+    @include flex-align-justify-center;
+    background-color: $background-color-white;
+    border-radius: 15px;
+    height: 69px;
+    width: 100%;
+    cursor: pointer;
+    @include card-shadow;
+    @include slide-hover;
+    
+
+    &-content {
+        width: 100%;
+        padding: 15px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        span {
+            margin-left: 10px;
+        }
+        
+    }
+
+    &-icon {
+        height: 69px;
+        border-radius: 0px 15px 15px 0px;
+        background-color: $tertiary-color;
+        width: 20%;
+        @include flex-align-justify-center;
+        visibility: collapse;
+        animation-play-state: paused;
+
+        .menuItem__icon {
+            background-color: $background-color-white;
+            border-radius: 100%;
+            color: $tertiary-color;
+            height: 24px;
+            width: 37%;
+            @include flex-align-justify-center;
+
+            @media (min-width: $breakpoints-tablette) {
+                height: 44px;
+            }
+        }
+    }
+
+    .title-plat {
+        margin: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    &-info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .info {
+            margin: 0;
+        }
+
+        .elips {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+    }
+}

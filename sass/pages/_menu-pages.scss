@@ -46,10 +46,16 @@
             .fa-solid {
                 position: absolute;
                 right: 44px;
+                cursor: pointer;
                 @include heart-hover;
 
                 @media (min-width: $breakpoints-tablette) {
                     right: 124px;
+                }
+
+                @media (min-width: $breakpoints-desktop) {
+                    position: relative;
+                    right: 115px;
                 }
             }
         }
@@ -58,6 +64,7 @@
             @include flex-column;
             gap: 15px;
             padding: 0px 20px;
+            @include delaytime;
         }
 
         &__entree-title {
@@ -79,6 +86,7 @@
             @include flex-column;
             gap: 15px;
             padding: 0px 20px;
+            @include delaytime;
         }
 
         &__plat-title {
@@ -100,6 +108,7 @@
             @include flex-column;
             gap: 15px;
             padding: 0px 20px;
+            @include delaytime;
         }
 
         &__dessert-title {

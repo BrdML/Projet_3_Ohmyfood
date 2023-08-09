@@ -7,6 +7,7 @@
     cursor: pointer;
     @include card-shadow;
     @include slide-hover;
+    @include slideUpCard;
     
 
     &-content {
@@ -28,7 +29,7 @@
         width: 20%;
         @include flex-align-justify-center;
         visibility: collapse;
-        animation-play-state: paused;
+        transition: all 1s ease-in-out;
 
         .menuItem__icon {
             background-color: $background-color-white;

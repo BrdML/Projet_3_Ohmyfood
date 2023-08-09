@@ -115,6 +115,7 @@
     opacity: 0;
   }
   100% {
+    opacity: 1;
     width: 20%;
   }
 }
@@ -132,10 +133,13 @@
 @keyframes slidein {
   0% {
     width: 20%;
-    visibility: visible;
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
   }
   100% {
-    width: 0;
+    width: 0%;
     opacity: 0;
   }
 }
@@ -148,6 +152,18 @@
     transform: scale(0);
     transform: rotate(180deg);
     opacity: 0;
+  }
+}
+@keyframes slideup {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(5px);
+    transform: translateY(5px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
   }
 }
 * {
@@ -490,14 +506,17 @@ body img {
   width: 100%;
   cursor: pointer;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-  transition: all 1s ease-in-out;
+  animation-name: slideup;
+  animation-duration: 2s;
+  animation-delay: 0s;
+  animation-fill-mode: both;
+  animation-timing-function: ease;
 }
 .menu__card:hover .menu__card-icon {
   animation-name: slide;
   animation-duration: 1s;
   animation-delay: 0s;
   visibility: visible;
-  animation-play-state: running;
 }
 .menu__card:hover .menuItem__icon {
   animation-name: rotate;
@@ -508,7 +527,6 @@ body img {
   animation-name: slidein;
   animation-duration: 1s;
   animation-delay: 0s;
-  animation-play-state: running;
 }
 .menu__card:not(:hover) .menuItem__icon {
   animation-name: rotatein;
@@ -533,7 +551,7 @@ body img {
   align-items: center;
   justify-content: center;
   visibility: collapse;
-  animation-play-state: paused;
+  transition: all 1s ease-in-out;
 }
 .menu__card-icon .menuItem__icon {
   background-color: #FFFFFF;
@@ -726,6 +744,7 @@ body img {
 .main-container .menu__title .fa-solid {
   position: absolute;
   right: 44px;
+  cursor: pointer;
   background-image: linear-gradient(#9356DC 0%, #FF79DA 100%);
   background-clip: text;
   -webkit-background-clip: text;
@@ -742,11 +761,29 @@ body img {
     right: 124px;
   }
 }
+@media (min-width: 1200px) {
+  .main-container .menu__title .fa-solid {
+    position: relative;
+    right: 115px;
+  }
+}
 .main-container .menu__entree {
   display: flex;
   flex-direction: column;
   gap: 15px;
   padding: 0px 20px;
+}
+.main-container .menu__entree .delay1 {
+  animation-delay: 0.3s;
+}
+.main-container .menu__entree .delay2 {
+  animation-delay: 0.6s;
+}
+.main-container .menu__entree .delay3 {
+  animation-delay: 0.9s;
+}
+.main-container .menu__entree .delay4 {
+  animation-delay: 1.2s;
 }
 .main-container .menu__entree-title {
   text-transform: uppercase;
@@ -767,6 +804,18 @@ body img {
   gap: 15px;
   padding: 0px 20px;
 }
+.main-container .menu__plats .delay1 {
+  animation-delay: 0.3s;
+}
+.main-container .menu__plats .delay2 {
+  animation-delay: 0.6s;
+}
+.main-container .menu__plats .delay3 {
+  animation-delay: 0.9s;
+}
+.main-container .menu__plats .delay4 {
+  animation-delay: 1.2s;
+}
 .main-container .menu__plat-title {
   text-transform: uppercase;
 }
@@ -785,6 +834,18 @@ body img {
   flex-direction: column;
   gap: 15px;
   padding: 0px 20px;
+}
+.main-container .menu__desserts .delay1 {
+  animation-delay: 0.3s;
+}
+.main-container .menu__desserts .delay2 {
+  animation-delay: 0.6s;
+}
+.main-container .menu__desserts .delay3 {
+  animation-delay: 0.9s;
+}
+.main-container .menu__desserts .delay4 {
+  animation-delay: 1.2s;
 }
 .main-container .menu__dessert-title {
   text-transform: uppercase;

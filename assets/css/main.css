@@ -527,6 +527,7 @@ body img {
   animation-name: slidein;
   animation-duration: 1s;
   animation-delay: 0s;
+  width: 0;
 }
 .menu__card:not(:hover) .menuItem__icon {
   animation-name: rotatein;
